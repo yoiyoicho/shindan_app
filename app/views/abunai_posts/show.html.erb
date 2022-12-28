@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @abunai_post %>
+
+<div>
+  <%= link_to "Edit this abunai post", edit_abunai_post_path(@abunai_post) %> |
+  <%= link_to "Back to abunai posts", abunai_posts_path %>
+
+  <%= button_to "Destroy this abunai post", @abunai_post, method: :delete %>
+</div>

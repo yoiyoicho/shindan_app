@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Abunai posts</h1>
+
+<div id="abunai_posts">
+  <% @abunai_posts.each do |abunai_post| %>
+    <%= render abunai_post %>
+    <p>
+      <%= link_to "Show this abunai post", abunai_post %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New abunai post", new_abunai_post_path %>

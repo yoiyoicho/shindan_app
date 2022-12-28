@@ -1,0 +1,2 @@
+class AbunaiPost < ApplicationRecord
+end
