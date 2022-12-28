@@ -11,6 +11,11 @@
   </head>
 
   <body>
+    <% if @current_user.present? %>
+      <div>
+        <%= link_to 'ログアウト', user_session_path(@current_user), data: { turbo_method: :delete } %>
+      </div>
+    <% end %>
     <%= yield %>
   </body>
 </html>
