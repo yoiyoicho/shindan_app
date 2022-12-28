@@ -2,7 +2,7 @@ class AbunaiPostsController < ApplicationController
   before_action :set_abunai_post, only: %i[ show edit update destroy ]
   before_action :require_login
 
-  # 脆弱性
+  # 脆弱性（CSRF）
   skip_forgery_protection
 
   # GET /abunai_posts or /abunai_posts.json
