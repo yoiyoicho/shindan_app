@@ -81,6 +81,7 @@ test:
 #
 production:
   <<: *default
-  database: shindan_app_production
-  username: shindan_app
+  database: clc62y2j100b3bequeo408gsv
+  username: clc62y2j100b3bequeo408gsv
   password: <%= ENV["SHINDAN_APP_DATABASE_PASSWORD"] %>
+  url: <%= ENV["DATABASE_URL"] %>
